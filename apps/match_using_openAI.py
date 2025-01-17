@@ -119,7 +119,7 @@ def run() -> None:
     # Streamlit app title
     st.title("The Match Assistant!(OpenAI)")
     st.write("Please load your files to continue.")
-    api_key = st.text_input("<inserisci qui la tua gemini api_key>")
+    api_key = st.text_input("<inserisci qui la tua OpenAI api_key>")
     model = st.text_input("please select the model to use: ", "gpt-4o-mini")
     if api_key and  model:
         Open_AI_solution(model =  model,api_key=api_key)
